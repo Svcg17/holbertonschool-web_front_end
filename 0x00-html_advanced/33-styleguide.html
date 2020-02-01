@@ -97,12 +97,13 @@
           <h2>Typography</h2>
         </header>
         <div>
-          <address>320 Stewart Avenue, Unit 12<br>New York City NY 10001
-          </address>
-          <pre>
-            <h2>My title</h2>
-            <p>Proin lacus turpis, feugiat sit amet sollicitudin non, volutpat in libero. Aenean hendrerit ultrices nulla ac lobortis. Vestibulum consectetur nibh vel ante rhoncus faucibus.</p>
-          </pre>
+          <address>320 Stewart Avenue, Unit 12<br>New York City NY 10001</address>
+          <div>
+            <pre>
+              <h2>My title</h2>
+              <p>Proin lacus turpis, feugiat sit amet sollicitudin non, volutpat in libero. Aenean hendrerit ultrices nulla ac lobortis. Vestibulum consectetur nibh vel ante rhoncus faucibus.</p>
+            </pre>
+          </div>
           <div>
             <p>Curabitur sit amet turpis cursus massa mollis <mark>highlighted</mark>. Duis finibus leo massa, eget dapibus erat finibus sed. Aenean condimentum sapien magna, eleifend <mark>highlighted</mark> mi consequat ut. Cras nec quam sed sapien ultricies <mark>highlighted</mark> ut sed metus.</p>
           </div>
@@ -118,24 +119,26 @@
           <caption>Star Wars Trilogy Data</caption>
           <thead>
             <tr>
-              <th>Title</th>
-              <th>Director</th>
-              <th>Release Date</th>
+              <th scope='col'>Title</th>
+              <th scope='col'>Director</th>
+              <th scope='col'>Release Date</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th>Star Wars: Episode IV - A New Hope</th>
+              <th scope='row'>Star Wars: Episode IV - A New Hope</th>
               <td>George Lucas</td>
               <td>May 25th, 1977</td>
             </tr>
             <tr>
-              <th>Star Wars: Episode V - The Empire Strikes Back</th>
+              <th scope='row'>
+                Star Wars: Episode V - The Empire Strikes Back
+              </th>
               <td>Irvin Kershner</td>
               <td>May 21st, 1980</td>
             </tr>
             <tr>
-              <th>Star Wars: Episode VI - Return of the Jedi</th>
+              <th scope='row'>Star Wars: Episode VI - Return of the Jedi</th>
               <td>Richard Marquand</td>
               <td>May 25th, 1983</td>
             </tr>
