@@ -23,11 +23,14 @@ Use HTML tags to structure a web page without any CSS or styling.
 * Your code should be W3C compliant and validate with W3C-Validator
 * Techium will be the name of the company we will use across our webpages.
 
-## Sitemap of the Project
-![sitemap](./Downloads/sitemap.png)
+## HTML files
+* index.html: homepage
+* about.html: about section page
+* contact.html: contact section page
+* blog.html: contact section page
+* article.html: contact section page
+* styleguide.html: webpage with different html tags
 
-## Wireframe of Techium project
-![Techium wireframe](./Downloads/wireframe.png)
 ---
 
 ## Author
