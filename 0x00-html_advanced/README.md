@@ -24,10 +24,10 @@ Use HTML tags to structure a web page without any CSS or styling.
 * Techium will be the name of the company we will use across our webpages.
 
 ## Sitemap of the Project
-![sitemap](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/10/47c5c522e758756baa7d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUZGDONYM4%2F20200130%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200130T205933Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=82eb005401c6e2bf2b586acd4d2b59d90d1f79039688dc3170dd0a205fa27a5a)
+![sitemap](./Downloads/sitemap.png)
 
 ## Wireframe of Techium project
-![Techium wireframe](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/10/f29b01525e8111538b6a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUZGDONYM4%2F20200130%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200130T205933Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=7817a20866efebdddf065f5a37078f52567ea87a53d3a8fc33f1550c44fe2cd4)
+![Techium wireframe](./Downloads/wireframe.png)
 ---
 
 ## Author
