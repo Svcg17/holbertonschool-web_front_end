@@ -1,0 +1,19 @@
+/*  Making custom properties in root element,
+    Resetting colors with created properties
+*/
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-gray: #f3f3f3;
+    --color-dark-gray: #353535;
+    --text-color: --color-black;
+}
+
+body, a {
+    color: var(--text-color);
+}
+
+.card-category, .section-tagline {
+    color: var(--color-primary)
+}
