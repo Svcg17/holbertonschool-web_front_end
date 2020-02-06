@@ -12,7 +12,7 @@ html {
     --color-white: #ffffff;
     --color-light-gray: #f3f3f3;
     --color-dark-gray: #353535;
-    --text-color: --color-black;
+    --text-color: var(--color-black);
 }
 
 body, a {

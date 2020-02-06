@@ -13,7 +13,7 @@ html {
     --color-white: #ffffff;
     --color-light-gray: #f3f3f3;
     --color-dark-gray: #353535;
-    --text-color: --color-black;
+    --text-color: var(--color-black);
 
     --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
