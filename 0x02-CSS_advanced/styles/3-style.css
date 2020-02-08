@@ -1,16 +1,9 @@
-/*  Making custom properties in root element,
-    Resetting colors with created properties
+/*
+ * Making custom properties in root element,
+ * Resetting colors with created properties
 */
 html {
     scroll-behavior: smooth;
-}
-
-body, a {
-    color: var(--text-color);
-}
-
-.card-category, .section-tagline {
-    color: var(--color-primary);
 }
 
 :root {
@@ -22,3 +15,18 @@ body, a {
     --text-color: var(--color-black);
 }
 
+body {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+}
+
+.card-category {
+    color: var(--color-primary);
+}
+
+.section-tagline {
+    color: var(--color-primary);
+}
