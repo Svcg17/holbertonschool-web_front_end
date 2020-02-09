@@ -57,7 +57,7 @@ a[href] {
 }
 
 a:visited {
-    font-style: italic;
+    font-style: italic !important;
 }
 
 a:hover {
