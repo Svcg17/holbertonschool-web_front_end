@@ -11,8 +11,8 @@ html {
     --color-primary: #d73953;
     --color-black: #090909;
     --color-white: #ffffff;
-    --color-light-gray: #f3f3f3;
-    --color-dark-gray: #353535;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
     --text-color: var(--color-black);
 
     --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -35,7 +35,7 @@ body {
     font-weight: var(--font-weight-regular);
 }
 
-section h2 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
 }
