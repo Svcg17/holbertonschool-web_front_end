@@ -111,7 +111,7 @@ a:active {
 
 .section-footer {
     padding: var(--section-footer-padding);
-    text-align: var(--section-footer-align)
+    text-align: var(--section-footer-align);
 }
 
 .section-title {
@@ -199,7 +199,7 @@ ul.row {
     clear: both;
 }
 
-*[class^="col-"] {
+[class^="col-"] {
     float: left;
     padding: 0.5rem;
 }
