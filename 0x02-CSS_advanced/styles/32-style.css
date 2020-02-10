@@ -184,7 +184,7 @@ a:active {
 .nav {
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style-type-type: none;
     text-align: center;
 }
 
@@ -209,7 +209,7 @@ a:active {
 ul.row {
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style-type-type: none;
 }
 
 .col-1-3 {
@@ -288,7 +288,7 @@ ul.row {
 
 .card-testimonial .card-quote cite {
     display: block;
-    padding: 1rem 0 0 0;
+    padding-top: 1rem;
     color: var(--color-primary);
 }
 
@@ -297,7 +297,7 @@ ul.row {
 }
 
 .section-hero .section-title { 
-    margin: 0 0 5rem 0;
+    margin-bottom: 5rem;
 }
 
 .section-hero .section-inner {
@@ -312,7 +312,7 @@ ul.row {
     position: -var(--header-logo-position);
 }
 
-.header-logo a[link] {
+.header-logo a {
     display: var(--header-logo-link-display);
     position: var(--header-logo-link-position);
     top: var(--header-logo-link-top);
