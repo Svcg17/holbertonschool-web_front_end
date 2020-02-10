@@ -114,7 +114,7 @@ a:active {
 .button:hover {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
-    background-color: var(--button-hover-background);
+    background: var(--button-hover-background);
 }
 
 .card-category{
@@ -136,7 +136,7 @@ a:active {
 
 .section-footer {
     padding: var(--section-footer-padding);
-    text-align: var(--section-footer-align)
+    text-align: var(--section-footer-align);
 }
 
 .section-title {
