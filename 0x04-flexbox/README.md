@@ -15,7 +15,7 @@ Applying Flexbox to the stylesheets from the Advanced CSS project.
 ---
 
 ## Author
-:x
+* **Sofia Cheung** - [Svcg17](https://github.com/Svcg17)
 
 
 
