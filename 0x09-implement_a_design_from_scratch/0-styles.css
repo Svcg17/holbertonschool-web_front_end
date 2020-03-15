@@ -18,6 +18,8 @@
         --font-size-medium: 18px;
         --font-size-large: 32px;
         --font-size-x-large: 46px;
+
+        --font-weight-bold: 600;
     }
 
 /* Base
@@ -50,10 +52,11 @@
         ============================= */
 
     header {
-        position: relative;
+        position: absolute;
         padding: 1rem 0 0;
         margin: 0;
         z-index: 1;
+        width: 100%;
     }
 
     .header-container {
@@ -131,33 +134,55 @@
         top: -0.4rem;
     }
 
+    /* Sections */
+    .section {
+        padding: 6rem 1.5rem 2rem;
+        height: 35rem;
+    }
+
+    .section-header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 5.5rem;
+    }
+
+    .section-header h1 {
+        font-weight: var(--font-weight-bold);
+        margin-bottom: 3rem;
+    }
+
+    .section-header p {
+        text-align: center;
+        margin: 0;
+        width: 39rem;
+    }
+
     
 /* Hero Section
         ============================= */
 
     .section-hero {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 24rem 0;
+        position: relative;
+        padding: 15rem 0;
         background-image: url(images/headphones_hero_1.jpg);
+        height: 20rem;
+        
     }
 
     .section-hero .section-body {
         display: flex;
         justify-content: center;
+        margin-top: 9rem;
     }
 
-    .section-body .section-inner {
+    .section-hero .section-body .section-inner {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 39rem;
     }
 
-    .section-body .section-inner h1 {
+    .section-hero .section-body .section-inner h1 {
         margin: 0;
         padding: 0;
         color: var(--color-white);
@@ -166,6 +191,10 @@
 
     .section-body .section-inner h1 + p {
         font-weight: bold;
+    }
+    
+    .section-body .section-inner h1 + p + p {
+        width: 39rem;
     }
 
     .section-body .section-inner .btn {
@@ -185,7 +214,7 @@
         opacity: 0.9;
     }
 
-    .section-body .section-inner p {
+    .section-hero .section-body .section-inner p {
         text-align: center;
         margin: 0;
         color: var(--color-white);
@@ -203,14 +232,12 @@
         }
 
         .header-container .header-logo {
-            flex-basis: 40%;
-            align-self: center;
-            margin: 0 5rem 0 5rem;
+            margin-left: 8rem;
         }
 
         .header-container .menu-icon {
             display: block;
-            padding: 0 2rem;
+            padding: 0 0 0 1rem;
         }
 
         .header-container .header-navbar {
@@ -233,8 +260,19 @@
             font-size: var(--font-size-x-small);
         }
 
+        /* Sections */
+         .section-header p {
+            text-align: center;
+            margin: 0;
+            width: auto;
+        }
+
         /* Section Hero */
         .section-hero {
             background-position: center;
+        }
+
+        .section-hero .section-body .section-inner {
+            padding: 0 1rem;
         }
     }
