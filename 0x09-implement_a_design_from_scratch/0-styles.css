@@ -65,12 +65,7 @@
         align-items: center;
     }
 
-    .header-container .header-logo {
-        display: flex;
-        align-items: center;
-    }
-
-    .header-container .header-logo img {
+    .header-logo img {
         width: 161px;
         height: 32px;
     }
@@ -103,7 +98,7 @@
         color: var(--color-primary);
     }
 
-    /* Input check */
+    /* Navicon */
     .header-container .menu-btn, .header-container .menu-icon {
         display: none;
     }
@@ -113,8 +108,12 @@
         height: 0.13rem;
         width: 1.1rem;
         background-color: white;
-        position: relative;
-        margin: 0;
+        position: absolute;
+        margin-left: -9rem;
+    }
+
+    .header-container .menu-btn:checked .section-hero {
+        padding: 15 0;
     }
 
     .header-container .menu-icon .navicon::before, .header-container .menu-icon .navicon::after {
@@ -124,6 +123,7 @@
         width: 1.7rem;
         background-color: white;
         position: absolute;
+        transition: all .2s ease-out;
     }
 
     .header-container .menu-icon .navicon::before {
@@ -133,6 +133,24 @@
     .header-container .menu-icon .navicon::after {
         top: -0.4rem;
     }
+
+    .header-container .menu-btn:checked ~ .menu-icon .navicon {
+        width: 0;
+        height: 0;
+    }
+
+    .header-container .menu-btn:checked ~ .menu-icon .navicon::before {
+        transform: rotate(45deg);
+    }
+
+    .header-container .menu-btn:checked ~ .menu-icon .navicon::after {
+        transform: rotate(-45deg);
+    }
+
+    .header-container .menu-btn:checked ~ .menu-icon .navicon::after, .header-container .menu-btn:checked ~ .menu-icon .navicon::before {
+        top: 0;
+    }
+
 
     /* Sections */
     .section {
@@ -166,6 +184,9 @@
     .section-body .section-inner {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem;
     }
 
     
@@ -179,6 +200,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 20rem;
+        
     }
 
     .section-hero .section-body {
@@ -225,6 +247,16 @@
         width: 39rem;
     }
 
+    /* 767px Screens
+        ============================ */
+    @media screen and (max-width: 767px) {
+        /* Header */
+        .header-container {
+            padding: 2rem 4rem;
+        }
+    }
+
+
     /* 480px Screens
        ============================= */
 
@@ -232,12 +264,8 @@
         /* Header */
         .header-container {
             margin-top: 1rem;
-            justify-content: start;
+            justify-content: center;
             flex-wrap: wrap;
-        }
-
-        .header-container .header-logo {
-            margin-left: 8rem;
         }
 
         .header-container .menu-icon {
@@ -281,6 +309,10 @@
         /* Section Hero */
         .section-hero {
             background-position: center;
+        }
+
+        .header-container .menu-btn:checked .section-hero {
+            transform: scale(1.5);
         }
 
         .section-hero .section-body .section-inner {
