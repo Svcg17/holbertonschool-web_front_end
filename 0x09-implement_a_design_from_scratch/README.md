@@ -6,8 +6,12 @@ The making of the web page consists of HTML/CSS and it will be both accessible a
 
 - The web page is developed from scratch, using no libraries or Javascript.
 - The webpage switches to a mobile version for devices with a screen width of 140px or less.
+- It is both responsive and accessible
+- Mainly using flexbox and css variables
 
 ## End Product
+Here's how the website looks like:
+
 ### Desktop
 ![Desktop view](./images/desktop.jpg)
 
