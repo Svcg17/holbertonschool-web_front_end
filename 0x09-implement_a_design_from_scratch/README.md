@@ -8,10 +8,13 @@ The making of the web page consists of HTML/CSS and it will be both accessible a
 - The webpage switches to a mobile version for devices with a screen width of 140px or less.
 
 ## End Product
-- Desktop
-- Mobile
+### Desktop
+![Desktop view](./images/desktop.jpg)
+
+### Mobile
+![wide screen view](./images/tablet.png)
+
+![mobile view](./images/mobile.png)
 
 ## Made by
 * **Sofia Cheung** - [Svcg17](https://github.com/Svcg17)
-
-
