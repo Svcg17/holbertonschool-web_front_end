@@ -82,3 +82,240 @@ Tips:
 
 Requirements:
    - You must use jQuery only to generate the HTML tag and attach it to the page
+
+### [4. HTML function](./4-index.html)
+Create a new function replaceFamilyTree:
+   - It should replace the childrens of the tbody elements with a new tr
+   - The tr element should contain two cells with Gerard and Bonissa in each
+   - Make sure createFamilyTree and replaceFamilyTree are called
+
+Requirements:
+   - You must use the keyword html to replace the content of the table
+
+### [5. Click attribute and remove function](./5-index.html)
+   - Remove the createFamilyTree and replaceFamilyTree functions
+   - Create a function createFamilyTree:
+       - It should append to the body an empty table, with thead and two cells with text Firstname and Lastname, respectively
+       - It should append an empty tbody element to the table after the thead
+   - Create a function addNewMember:
+       - It accepts two arguments firstName(string) and lastName(string)
+       - It appends to the body of the table a new row with three cells
+       - The first cell displays the firstName, the second cell displays the lastName
+       - The third cell displays (x)
+       - On click on the third cell, it should remove the row
+       - Add CSS to the third cell to have an orange background
+   - Calls the function createFamilyTree
+   - Using addNewMember, generate a fake table with:
+       - the first row Guillaume, Salva
+       - the second row Arielle, Snizt
+       - the third row Fanette, Snizt
+       - the fourth row Gerard, Snizt
+       - the fifth row Victor, Salva
+
+### [6. Val, before, and prepend functions](./6-index.html)
+   - Reuse the function createFamilyTree you wrote in the previous task
+   - Reuse the function addNewMember you wrote in the previous task, and add the following modification:
+       - The function should accept a new argument position(string)
+       - When position is equal to before, it should add the row at the top of the table
+       - Otherwise, it should add the row at the bottom of the table
+   - Write a function createForm:
+       - It should add before the table two input of type text
+       - It should add a select with two options as well: before and after with corresponding Before and After text
+       - It should add a input of type submit as well
+          -  When the user clicks on the submit, it should call the function addNewMember with the value of the two inputs and the value of the select element
+   - Call the function createFamilyTree
+   - Call the function createForm
+
+Requirements:
+
+   - You must use the keywords first, before, and prepend
+   - To select the second input, use the nth-of-type selector
+
+### [7. Query - Setup your dev environment](./7-index.html)
+   - Remove the functions from the script
+
+   - Import jQuery using the CDN and make sure you can access the ajax methods
+
+    Create a form:
+       - Create a function createSearchForm, it should append to the body:
+          -  An empty input of type text without ID, name, or class
+          -  An input of type submit
+            - When the user clicks on the submit button, it should query the function queryWikipedia that you are going to create with the value of the text input
+          -  An empty ul element
+
+    Create a function addNewArticle to add new items to a list
+       - It accepts three arguments id(string), title(string), and snippet(string)
+       - It create an element li
+           - Within the li, add two paragraph elements
+               - The first paragraph contains a span tag with the following text: id -, then a b element with the title
+               - The second paragraph, should contain the snippet
+       - Appends the li to the ul element (created by createSearchForm)
+
+    Implement a get function: create a function queryWikipedia
+       - It accepts one argument search(string)
+       - Create a data object with attributes required to query a search using the string passed in the argument with Wikipedia
+       - For each result returned by the API, call the function addNewArticle with the result’s pageid, title, and snippet
+
+   - Call the function createSearchForm when the page loads
+
+### [8. Pagination](./8-index.html)
+   - Modify the function createSearchForm:
+       - It should append to the body another list, with the id pagination
+
+   - Modify the function queryWikipedia:
+       - Add a new parameter named offset(number)
+       - By default, the offset should be set to 0
+       - Modify the data object to add the offset
+       - When you receive the response from the API, call the function buildPagination that you are going to create below
+
+   - Create a new function named buildPagination:
+       - It accepts three arguments numberOfItems(number), itemsPerPage(number), and currentOffset(number)
+       - When the function is called, reset the pagination list to an empty tag
+       - Write a loop that will display the pagination (using the total number of items divided by the number of items per page)
+       - For each page, create a list item
+           - Add some CSS for each item (cursor: 'pointer', 10px margin left, and bold when this is the current page)
+           - The text of the item should be the page number
+           - When clicking on a page number, it should call the function queryWikipedia with the right offset
+
+### [9. Wrap/unwrap](./9-index.html)
+   - In the header, add some CSS, with the style tag:
+       - Add a new class named loading
+           - Set the opacity at 0.2 within that class
+
+   - In your script with your other functions, create a function named displayLoading:
+       - It accepts one argument loading
+       - It select the first ul element of the page
+       - If loading is true, it wraps the element with a div tag and the class loading
+       - If loading is false, it unwrap the ul from the div
+
+   - Modify the queryWikipedia function:
+       - It should call the function displayLoading before querying the API
+       - Once the API returns the value, it should remove the opacity by calling the function again
+
+Requirements:
+
+   - You must use the wrap and unwrap functions of Jquery
+
+### [10. Another Get API](./10-index.html)
+Setup your dev environment
+
+   - Install json-server within your projects using npm:
+   - Run the server using node_modules/.bin/json-server --watch db.json
+
+You are provided with this db.json, don’t forget to push it, you can change the values of the id, title, author, postId, name as you like
+```
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "fd",
+      "author": "fffff",
+      "id": 2
+    },
+    {
+      "title": "fd",
+      "author": "fffff",
+      "id": 3
+    },
+    {
+      "title": "f",
+      "author": "f",
+      "id": 4
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 5
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 6
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 7
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 8
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 9
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 10
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
+```
+Reuse your template from the previous task, remove the functions in your script and the style in the head
+
+Make sure you import jQuery using the CDN and make sure you can access the ajax methods
+
+Create a function addPostRow:
+  - It takes into argument data (object)
+  - It append to the body a paragraph
+  - The paragraph should contain a span element with the text Post created with id ID, title: TITLE, author: AUTHOR
+     - Each variable is contained in the data object
+
+Create a function named listPosts:
+  - It should query your local server on the posts endpoint
+  - When the server return a 200 response, it should call the function addPostRow for each element in the response
+  - When the server is unavailable, display an alert with the message Server Error
+
+Call the function listPosts when your page loads
+
+### [11. Post query ](./11-index.html)
+    Create a new function buildForm:
+       - It appends to the body a form element
+       - Inside the form, add a div element, with a label for author with text Author and an input of type text with id author
+       - Inside the form, add a div element, with a label for title with text Title and a textarea with id title
+       - Inside the form, add an input of type submit
+       - When clicking on the submit button, call the function sendForm detailed below
+
+    Create a new function sendForm:
+       - It should add after the form, the text About to send the query to the API
+       - It should create a data object, with the title and author attributes. The values are the ones within the inputs
+       - It should send a POST query to your server endpoint posts with the data
+       - If the query succeed, call the function addPostRow with the data coming back from the API
+       - If the query does not succeed, it should display an alert with the message Error sending the POST query
+
+    Call the functions listPosts and buildForm when your page loads
+
+Requirements:
+   - When clicking on the label, the input text should be selected by the browser
+   - When pressing enter on the input text, the form should be submitted without reloading the page
+   - You must use the after function from jQuery
+
+### [12. Delete query ](./12-index.html)
+Modify the function addPostRow:
+   - Add an id attribute to the paragraph with row-ID (the ID being the one of the post)
+   - Append a span element with the text (delete) to the p, this span should come before the span with the post information
+      -  On click, call the function deletePost with the post id
+
+Create a function deletePost:
+   - It accepts one argument id(number)
+   - Send a DELETE query to the posts endpoint with the id of the post
+   - If the query is successful, remove the row from the body
+   - If the query is not successful, display an alert with the message Post was not deleted
