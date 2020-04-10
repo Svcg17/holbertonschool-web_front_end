@@ -21,6 +21,7 @@
                     $("input").last().addClass("submit");
                     $(".submit").click(function() {
                         let search = $("input").first().val();
+                        $("ul").empty();
                         queryWikipedia(search);
                     });
                 }
@@ -41,6 +42,9 @@
                             for (let obj in resArr) {
                                 addNewArticle(resArr[obj].pageid, resArr[obj].title, resArr[obj].snippet);
                             }
+                        },
+                        error: function() {
+                            console.log("Something went wrong.");
                         }
                     })
                 }
