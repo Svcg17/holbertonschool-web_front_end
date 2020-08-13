@@ -24,8 +24,9 @@ Projects | Description
 [Accessibility](./0x07-accessibility) | How to make a website accessible, identify problems and diagnose with tools
 [Implement a design from scratch](./0x09-implement_a_design_from_scratch) | Build a website given a design in Figma
 [Bootstrap](./0x0A-Bootstrap) | Learn all about Bootstrap and how to use it
-[Advanced JavaScript](./0x0C-Javascript_advanced) | Complete advanced javascript tasks
-[Advanced jQuery](./0x0D-JQuery_advanced) | Complete advanced jQuery tasks
+[Advanced JavaScript](./0x0C-Javascript_advanced) | Advanced javascript concepts
+[Advanced jQuery](./0x0D-JQuery_advanced) | Advanced jQuery concepts
+[Cookies and Local Storage](./0x0E-Cookies_local_storage) | Storing info with cookies and local storage
+[Fun with CSS](./fun_with_css) | Fun and challenging exercises using only CSS
 ## Author
 * **Sofia Cheung** - [Svcg17](https://github.com/Svcg17)
-
