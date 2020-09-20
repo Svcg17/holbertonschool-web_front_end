@@ -11,5 +11,8 @@ Collection of tasks to learn how to make a website responsive on multiple device
 - The differences between responsive and adaptive design
 - CSS units that are used to make elements flexible
 
+## Results
+![img](./images/screenshot.jpg)
+
 ## Author
 * **Sofia Cheung** - [Svcg17](https://github.com/Svcg17)
